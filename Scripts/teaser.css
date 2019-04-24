@@ -9,11 +9,11 @@
 
 body {
   /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
-  background: -webkit-linear-gradient(left, black 50%, #191919);
-  background: -moz-linear-gradient(left, black 50%,#191919);
-  background: -ms-linear-gradient(left, black 50%,#191919);
-  background: -o-linear-gradient(left, black 50%,#191919);
-  background: linear-gradient(left, black 50%,#191919);
+  background: -webkit-linear-gradient(left, black 70%, #191919);
+  background: -moz-linear-gradient(left, black 70%,#191919);
+  background: -ms-linear-gradient(left, black 70%,#191919);
+  background: -o-linear-gradient(left, black 70%,#191919);
+  background: linear-gradient(left, black 70%,#191919);
 }
 
 #container {
