@@ -1,0 +1,210 @@
+body {
+  background-color: #191919;
+}
+/* original */
+#ginStd {
+  position: absolute;
+  left: 50.25%;
+  top: 10%;
+  z-index: -2;
+  animation-name: ginStdAnim;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#ginPrm {
+  position: absolute;
+  left: 42%;
+  top: 10%;
+  z-index: -2;
+  animation-name: ginPrmAnim;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+
+#brinTop {
+  position: absolute;
+  left: 35.5%;
+  top: 40%;
+  z-index: -3;
+  animation-name: brinTopAnim;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#brinBot {
+  position: absolute;
+  left: 38%;
+  top: 63%;
+  animation-name: brinBotAnim;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#tonic {
+  position: absolute;
+  opacity: 1;
+  left: 47.5%;
+  top: 30%;
+  z-index: -1;
+  animation-name: tonicAnim;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+/* mirrored */
+#ginStdM {
+  position: absolute;
+  left: 50.25%;
+  top: 80%;
+  z-index: -2;
+  display:block;
+	-moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+       -webkit-transform: scaleY(-1);
+       transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+  animation-name: ginStdAnimM;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#ginPrmM {
+  position: absolute;
+  left: 42%;
+  top: 80%;
+  z-index: -2;
+  display:block;
+	-moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+       -webkit-transform: scaleY(-1);
+       transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+  animation-name: ginPrmAnimM;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+
+#brinTopM {
+  position: absolute;
+  left: 35.5%;
+  top: 80%;
+  z-index: -3;
+  display:block;
+	-moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+       -webkit-transform: scaleY(-1);
+       transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+  animation-name: brinTopAnimM;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#brinBotM {
+  position: absolute;
+  left: 38%;
+  top: 73%;
+  display:block;
+	-moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+       -webkit-transform: scaleY(-1);
+       transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
+  animation-name: brinBotAnimM;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#tonicM {
+  position: absolute;
+  opacity: 1;
+  left: 47.5%;
+  top: 78%;
+  z-index: -1;
+  display:block;
+	-moz-transform: scaleY(-1);
+       -o-transform: scaleY(-1);
+       -webkit-transform: scaleY(-1);
+       transform: scaleY(-1);
+	-webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.3)));
+  animation-name: tonicAnim;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+/* original */
+@keyframes tonicAnim {
+  0% {opacity: 0; transform: scale(0.8, 0.8);}
+  50% {opacity: 1;}
+  100% {transform: scale(1, 1);}
+}
+
+@keyframes ginPrmAnim {
+  0% {opacity: 0; left: 37%;}
+  50% {opacity: 1;}
+  100% {left: 42%;}
+}
+
+@keyframes ginStdAnim {
+  0% {opacity: 0; left: 55.25%;}
+  50% {opacity: 1;}
+  100% {left: 50.25%;}
+}
+
+@keyframes brinBotAnim {
+  0% {opacity: 0; top: 68%;}
+  50% {opacity: 1;}
+  100% {top: 63%;}
+}
+
+@keyframes brinTopAnim {
+  0% {opacity: 0; top: 45%;}
+  50% {opacity: 1;}
+  100% {top: 40%;}
+}
+
+/* mirrored */
+
+@keyframes ginPrmAnimM {
+  0% {opacity: 0; left: 37%;}
+  50% {opacity: 1;}
+  100% {left: 42%;}
+}
+
+@keyframes ginStdAnimM {
+  0% {opacity: 0; left: 55.25%;}
+  50% {opacity: 1;}
+  100% {left: 50.25%;}
+}
+
+@keyframes brinBotAnimM {
+  0% {opacity: 0; top: 78%;}
+  50% {opacity: 1;}
+  100% {top: 73%;}
+}
+
+@keyframes brinTopAnimM {
+  0% {opacity: 0; top: 85%;}
+  50% {opacity: 1;}
+  100% {top: 80%;}
+}

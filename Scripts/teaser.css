@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'GiniFont';
+  src: url('../Assets/optiagency-gothic-webfont.woff2') format('woff2'),
+       url('../Assets/optiagency-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
+  background: -webkit-linear-gradient(left, black 50%, #191919);
+  background: -moz-linear-gradient(left, black 50%,#191919);
+  background: -ms-linear-gradient(left, black 50%,#191919);
+  background: -o-linear-gradient(left, black 50%,#191919);
+  background: linear-gradient(left, black 50%,#191919);
+}
+
+#container {
+  text-align: center;
+  width: 70%;
+}
+
+#ginLogo {
+  display: inline-block;
+  margin-top: 12em;
+  transform: scale(1.5);
+  opacity: 0;
+  animation: logoAnim 1.5s linear 2.5s forwards
+}
+
+/* traja 7s */
+video {
+  position: absolute;
+  top: 280px;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: startVid 0.5s linear 4.5s forwards, endVid 0.5s linear 12s forwards;
+}
+
+@keyframes endVid {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes startVid {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* premaknjeno iz leve za 550 in zgoraj za 50*/
+
+#anim {
+  /* transform: scale(1.1); */
+}
+
+#ginStd {
+  position: absolute;
+  left: 1511px;
+  top: 143px;
+  z-index: -2;
+  animation-name: ginStdAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#ginPrm {
+  position: absolute;
+  left:1358px;
+  top: 143px;
+  z-index: -2;
+  animation-name: ginPrmAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+
+#brinTop {
+  position: absolute;
+  left: 1240px;
+  top: 425px;
+  z-index: -3;
+  animation-name: brinTopAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#brinBot {
+  position: absolute;
+  left: 1280px;
+  top:  640px;
+  animation-name: brinBotAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+#tonic {
+  position: absolute;
+  opacity: 1;
+  left: 1460px;
+  top: 330px;
+  z-index: -1;
+  animation-name: tonicAnim;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes tonicAnim {
+  0% {opacity: 0; transform: scale(0.8);}
+  50% {opacity: 1;}
+  100% {transform: scale(1);}
+}
+
+@keyframes ginPrmAnim {
+  0% {opacity: 0; left: 1308px;}
+  50% {opacity: 1;}
+  100% {left: 1358px;}
+}
+
+@keyframes ginStdAnim {
+  0% {opacity: 0; left: 1561px;}
+  50% {opacity: 1;}
+  100% {left: 1511px;}
+}
+
+@keyframes brinBotAnim {
+  0% {opacity: 0; top: 690px;}
+  50% {opacity: 1;}
+  100% {top: 640px;}
+}
+
+@keyframes brinTopAnim {
+  0% {opacity: 0; top: 475px;}
+  50% {opacity: 1;}
+  100% {top: 425px;}
+}
+
+@keyframes logoAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Smoke effect */
+
+.space {
+  width: 20px;
+}
+
+h1 {
+  transform: translateY(-50%);
+  width: 100%;
+  margin-top: 4.7em;
+  color: #ddd;
+  font-size: 4em;
+  font-family: GiniFont;
+}
+
+h1 span {
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {opacity: 0; transform: rotateY(90deg); filter: blur(10px);}
+  100% {opacity: 1; transform: rotateY(0deg); filter: blur(0px);}
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 4.9s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 5.3s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 5.7s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 6.1s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 6.3s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 6.5s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 7.3s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 7.7s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 7.8s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 8.5s;
+}
+h1 span:nth-child(14) {
+  animation-delay: 8.7s;
+}
+h1 span:nth-child(15) {
+  animation-delay: 8.9s;
+}
+h1 span:nth-child(16) {
+  animation-delay: 9.3s;
+}
+h1 span:nth-child(17) {
+  animation-delay: 9.5s;
+}
+h1 span:nth-child(18) {
+  animation-delay: 9.7s;
+}
