@@ -187,11 +187,8 @@ h1 {
   text-align: center;
 }
 
-span + span {
-  margin: 0 -5px;
-}
-
 h1 span {
+  margin: 0 -8px;
   opacity: 0;
   display: inline-block;
   animation: animate 1s linear forwards;
