@@ -7,10 +7,14 @@
 
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+html,body{
+  height:100%;
 }
+
+.flex-fill {
+  flex:1;
+}
+
 
 body {
   /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
@@ -25,26 +29,21 @@ body {
   display: block;
   max-width: 100%;
   max-height: 100vh;
-  margin: 0 auto 0 auto;
   opacity: 0;
+  transform: scale(1);
   animation: logoAnim 1.5s linear 2.5s forwards
 }
 
 /* premaknjeno iz leve za 550 in zgoraj za 50*/
 
 #anim {
-  position: relative;
-  margin-top: -80px;
-  width: 100%;
-  max-width: 100%;
-  height: 600px;
-  max-height: 100%;
-  /* transform: scale(0.5); */
+  /* margin-top: -8rem; */
+  height: 5px;
 }
 
 #ginStd {
   position: absolute;
-  top: 34%;
+  top: 50%;
   left: 50%;
   margin-left: 75px;
   transform: translate(-50%, -50%);
@@ -58,7 +57,7 @@ body {
 
 #ginPrm {
   position: absolute;
-  top: 34%;
+  top: 50%;
   left: 50%;
   margin-left: -75px;
   transform: translate(-50%, -50%);
@@ -73,9 +72,10 @@ body {
 
 #brinTop {
   position: absolute;
-  top: 54%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 130px;
+  transform: translate(-50%, -50%) scale(1);
   z-index: -3;
   animation-name: brinTopAnim;
   animation-duration: 2s;
@@ -86,8 +86,9 @@ body {
 
 #brinBot {
   position: absolute;
-  top: 77%;
+  top: 50%;
   left: 50%;
+  margin-top: 270px;
   transform: translate(-50%, -50%);
   z-index: 1;
   animation-name: brinBotAnim;
@@ -101,6 +102,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-top: 100px; 
   transform: translate(-50%, -50%) scale(1) ;
   opacity: 1;
   z-index: -1;
@@ -129,15 +131,15 @@ body {
 }
 
 @keyframes brinBotAnim {
-  0% {opacity: 0; top: 82%;}
+  0% {opacity: 0; margin-top: 320px;}
   50% {opacity: 1;}
-  100% {top: 77%;}
+  100% {margin-top: 270px;}
 }
 
 @keyframes brinTopAnim {
-  0% {opacity: 0; top: 59%;}
+  0% {opacity: 0; margin-top: 180px;}
   50% {opacity: 1;}
-  100% {top: 54%;}
+  100% {margin-top: 130px;}
 }
 
 @keyframes logoAnim {
@@ -148,16 +150,6 @@ body {
 /* Smoke effect */
 
 /* traja 7s */
-
-#container {
-  position: relative;
-  margin: -80% auto 0 auto;
-  width: 100%;
-  height: 50vh;
-  text-align: center;
-  z-index: -5;
-  transform: scale(1);
-}
 
 #smoke {
   position: absolute;
@@ -184,15 +176,21 @@ body {
   width: 20px;
 }
 
+#smokeAnim {
+  margin-bottom: auto;
+  margin-top: auto;
+  /* margin-top: 15rem; */
+}
+
 h1 {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: scale(0.75) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
   transform: translateY(-50%);
   width: 100%;
   color: rgb(158, 158, 158);
-  font-size: 3em;
+  font-size: 2.8rem;
   font-family: GiniFont;
   font-weight: lighter;
   text-align: center;
@@ -256,93 +254,86 @@ h1 span:nth-child(18) {
   animation-delay: 6.5s;
 }
 
-@media (min-height: 800px) {
-
-  /* #anim {
-    margin: 500px auto 0 auto;
-  }
-
-  #container {
-    margin: 50px auto 0 auto;
-  } */
-}
-
-@media (min-width: 360px) {
-  #anim{
-      margin-top: -60px;
-  }
-
-  #container {
-    margin: -70% auto 0 auto;
-  }
-}
-
-@media (min-width: 410px) {
-  #anim{
-      margin-top: -50px;
-  }
-
-  #container {
-    margin: -60% auto 0 auto;
-  }
-}
-
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  #anim{
-    margin-top: -50px;
-    transform: scale(0.5);
-   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
- /* #anim{
-  margin-top: -50px;
-  transform: scale(0.5);
- } */
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #ginLogo {
-    position: absolute;
-    display: block;
-    left: 350px;
-    top: 200px;
-    transform: scale(1.5);
-    opacity: 0;
-    animation: logoAnim 1.5s linear 2.5s forwards
-  }
-  
-  /* premaknjeno iz leve za 550 in zgoraj za 50*/
-  
-  #anim {
-    position: relative;
-    margin: 250px 60px 0 auto;
-    width: 600px;
-    height: 650px;
+  /* #anim {
+    margin: -5rem auto 0 auto;
     transform: scale(1);
   }
 
-  #container {
-    position: relative;
-    margin-top: -500px;
-    left: -180px;
-    width: 50%;
-    height: 600px;
-    text-align: center;
-    z-index: -5;
-    transform: scale(1.2);
+  #smokeAnim {
+    margin-top: 10rem;
   }
 
+  #ginLogo {
+    margin: 1rem auto 0 auto;
+    transform: scale(1.15);
+  }
+  */
+
   h1 {
-    font-size: 5em;
-    top: 45%;
+    top: 50%;
+    font-size: 5rem;
+  }
+
+  body {
+    /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
+    background: -webkit-linear-gradient(left, black 50%, #191919);
+    background: -moz-linear-gradient(left, black 50%,#191919);
+    background: -ms-linear-gradient(left, black 50%,#191919);
+    background: -o-linear-gradient(left, black 50%,#191919);
+    background: linear-gradient(left, black 50%,#191919);
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #anim {
+    margin-top: 5rem;
+    transform: scale(0.85);
+  }
 
+  #smokeAnim {
+    margin-top: -5rem;
+    margin-bottom: 0;
+  }
+
+  #ginLogo {
+    margin: 8rem auto 0 auto;
+    transform: scale(1.25);
+  }
+
+  h1 {
+    top: 45%;
+  }
+}
+
+@media (min-width: 1400px) {
+  #anim {
+    margin-top: 30rem;
+    transform: none;
+  }
+
+  #smokeAnim {
+    margin-top: -20rem;
+  }
+
+  #ginLogo {
+    margin: 8rem auto 0 auto;
+    transform: scale(1.5);
+  }
+
+  h1 {
+    top: 50%;
+  }
 }
