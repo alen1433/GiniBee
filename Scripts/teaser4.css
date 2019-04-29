@@ -264,6 +264,12 @@ h1 span:nth-child(18) {
  }
 }
 
+@media (max-width: 991px){
+  #animCol {
+    margin: 10rem 0 5rem 0;
+  }
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
