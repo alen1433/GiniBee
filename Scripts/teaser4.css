@@ -51,6 +51,7 @@ body {
 
 #info {
   color: white;
+  margin-top: -5rem;
 }
 
 #honeycomb {
@@ -371,6 +372,10 @@ h1 span:nth-child(18) {
   h1 {
     top: 50%;
     font-size: 5rem;
+  }
+
+  #info {
+    margin-top: 5rem;
   }
 
   #infoTonic {
