@@ -9,6 +9,9 @@
 
 html,body{
   height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .flex-fill {
@@ -23,6 +26,7 @@ body {
   background: -ms-linear-gradient(bottom, black 50%,#191919);
   background: -o-linear-gradient(bottom, black 50%,#191919);
   background: linear-gradient(bottom, black 50%,#191919);
+  background-attachment: fixed;
 }
 
 #ginLogo {
@@ -32,6 +36,67 @@ body {
   opacity: 0;
   transform: scale(1);
   animation: logoAnim 1.5s linear 2.5s forwards
+}
+
+#beeLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -6;
+  margin-left: 0;
+  opacity: 0;
+  animation: logoAnim 1.5s linear 2.5s forwards
+}
+
+#info {
+  color: white;
+}
+
+#honeycomb {
+  margin: 0 auto;
+}
+
+#infoTonic {
+  max-width: 80%;
+  height: auto;
+}
+
+#info1 {
+  margin-top: 15rem;
+}
+
+#info2 {
+  margin-top: 3.5rem;
+}
+
+#info3 {
+  margin-top: 6rem;
+}
+
+#footer {
+  font-family: 'GiniFont';
+  font-weight: lighter;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #191919;
+  color: white;
+  text-align: center;
+}
+
+#MLogo {
+  transform: scale(1);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: logoAnim 1.5s linear 0.5s backwards
 }
 
 /* premaknjeno iz leve za 550 in zgoraj za 50*/
@@ -157,7 +222,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -6;
+  z-index: -7;
   opacity: 0;
   animation: startVid 0.5s linear 4.5s forwards, endVid 0.5s linear 9s forwards;
 }
@@ -266,7 +331,7 @@ h1 span:nth-child(18) {
 
 @media (max-width: 991px){
   #animCol {
-    margin: 10rem 0 5rem 0;
+    margin: 12rem 0 5rem 0;
   }
 }
 
@@ -277,7 +342,13 @@ h1 span:nth-child(18) {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #footer {
+    font-size: 1.2rem;
+  }
 
+  #anim {
+    margin-top: 12rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -302,23 +373,31 @@ h1 span:nth-child(18) {
     font-size: 5rem;
   }
 
+  #infoTonic {
+    max-width: 244px;
+  }
+
+  #info3 {
+    margin-top: 15.5rem;
+  }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #anim {
-    margin-top: 5rem;
+    margin-top: 10rem;
     transform: scale(0.85);
   }
 
   #smokeAnim {
-    margin-top: -5rem;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   #ginLogo {
     margin: 8rem auto 0 auto;
-    transform: scale(1.25);
+    transform: scale(1);
   }
 
   h1 {
@@ -334,6 +413,15 @@ h1 span:nth-child(18) {
     background: linear-gradient(left, black 50%,#191919);
   }
 
+  #beeLogo {
+
+    margin-left: -18%;
+  }
+
+  #MLogo {
+    transform: scale(1) translateY(20%);
+  }
+
 }
 
 @media (min-width: 1400px) {
@@ -343,15 +431,23 @@ h1 span:nth-child(18) {
   }
 
   #smokeAnim {
-    margin-top: -20rem;
+    margin-top: -21rem;
   }
 
   #ginLogo {
     margin: 8rem auto 0 auto;
-    transform: scale(1.5);
+    transform: scale(1);
   }
 
   h1 {
     top: 50%;
+  }
+
+  #infoTonic {
+    max-width: 300px;
+  }
+
+  #info3 {
+    margin-top: 12.5rem;
   }
 }
