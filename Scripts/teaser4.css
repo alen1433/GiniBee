@@ -46,7 +46,6 @@ body {
   z-index: -6;
   margin-left: 0;
   opacity: 0;
-  animation: logoAnim 1.5s linear 2.5s forwards
 }
 
 #info {

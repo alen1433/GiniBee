@@ -3,7 +3,15 @@ vid.playbackRate = 1.5;
 var anim = document.getElementById("anim");
 
 myFunction();
+animateBee();
 document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
+
+function animateBee(){
+  if(screen.width > 1200){
+    var bee = document.getElementById("beeLogo");
+    bee.style.animation = "logoAnim 1.5s linear 2.5s forwards";
+  }
+}
 
 function myFunction(){
   if(screen.width < 576){
