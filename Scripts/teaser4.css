@@ -21,11 +21,12 @@ html,body{
 
 body {
   /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
-  background: -webkit-linear-gradient(bottom, black 50%, #191919);
+  /* background: -webkit-linear-gradient(bottom, black 50%, #191919);
   background: -moz-linear-gradient(bottom, black 50%,#191919);
   background: -ms-linear-gradient(bottom, black 50%,#191919);
   background: -o-linear-gradient(bottom, black 50%,#191919);
-  background: linear-gradient(bottom, black 50%,#191919);
+  background: linear-gradient(bottom, black 50%,#191919); */
+  background-color: #262626;
   background-attachment: fixed;
 }
 
@@ -410,11 +411,11 @@ h1 span:nth-child(18) {
 
   body {
     /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
-    background: -webkit-linear-gradient(left, black 50%, #191919);
+    /* background: -webkit-linear-gradient(left, black 50%, #191919);
     background: -moz-linear-gradient(left, black 50%,#191919);
     background: -ms-linear-gradient(left, black 50%,#191919);
     background: -o-linear-gradient(left, black 50%,#191919);
-    background: linear-gradient(left, black 50%,#191919);
+    background: linear-gradient(left, black 50%,#191919); */
   }
 
   #beeLogo {
