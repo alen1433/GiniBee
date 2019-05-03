@@ -34,6 +34,7 @@ body {
   display: block;
   max-width: 100%;
   max-height: 100vh;
+  margin-top: 3rem;
   opacity: 0;
   transform: scale(1);
   animation: logoAnim 1.5s linear 2.5s forwards
@@ -244,7 +245,7 @@ body {
 
 #smokeAnim {
   margin-bottom: auto;
-  margin-top: auto;
+  margin-top: 3rem;
   /* margin-top: 15rem; */
 }
 
@@ -350,6 +351,10 @@ h1 span:nth-child(18) {
   #anim {
     margin-top: 12rem;
   }
+
+  #ginLogo {
+    margin-bottom: 3rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -374,6 +379,11 @@ h1 span:nth-child(18) {
     font-size: 5rem;
   }
 
+  #anim {
+    margin-top: 15rem;
+    transform: scale(0.8);
+  }
+
   #info {
     margin-top: 5rem;
   }
@@ -385,6 +395,12 @@ h1 span:nth-child(18) {
   #info3 {
     margin-top: 15.5rem;
   }
+
+  #smokeAnim {
+    margin-top: 3rem;
+    /* margin-top: 15rem; */
+  }
+
 
 }
 
@@ -436,7 +452,7 @@ h1 span:nth-child(18) {
   }
 
   #smokeAnim {
-    margin-top: -21rem;
+    margin-top: -18rem;
   }
 
   #ginLogo {
