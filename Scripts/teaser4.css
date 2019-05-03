@@ -105,6 +105,7 @@ body {
 
 #anim {
   /* margin-top: -8rem; */
+  margin-top: -2rem;
   height: 5px;
 }
 
@@ -245,7 +246,7 @@ body {
 
 #smokeAnim {
   margin-bottom: auto;
-  margin-top: 3rem;
+  margin-top: 2rem;
   /* margin-top: 15rem; */
 }
 
@@ -385,7 +386,7 @@ h1 span:nth-child(18) {
   }
 
   #info {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   #infoTonic {
@@ -441,6 +442,10 @@ h1 span:nth-child(18) {
 
   #MLogo {
     transform: scale(1) translateY(20%);
+  }
+
+  #info {
+    margin-top: 5rem;
   }
 
 }
