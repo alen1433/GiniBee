@@ -53,3 +53,11 @@ animateHTML().init();
 setTimeout(function(){
     vid.play();
   }, 4500);
+
+  function changeGif(){
+    // Check if Mobile client
+     var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/);
+    if(isMobile){
+      vid.src = "Assets/smokeGif.gif";
+    }
+  }
