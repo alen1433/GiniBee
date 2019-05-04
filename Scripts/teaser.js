@@ -57,7 +57,8 @@ setTimeout(function(){
   function changeGif(){
     // Check if Mobile client
      var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/);
-    if(isMobile){
+      if(isMobile){
       vid.src = "Assets/smokeGif.gif";
-    }
+      }
   }
+  changeGif().init();
