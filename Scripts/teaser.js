@@ -50,19 +50,19 @@ var animateHTML = function() {
 animateHTML().init();
 
 
-setTimeout(function(){
-    vid.play();
-  }, 4500);
+// setTimeout(function(){
+//     vid.play();
+//   }, 4500);
 
-function changeGif(){
-  // Check if Mobile client
-  var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/);
-  var gif = new Image();
-  if(isMobile){
-    gif.src = "Assets/smokeGif.gif";
-    gif.id = "smoke";
-    document.getElementById("smokeHolder").remove();
-    document.getElementById("smokeHolder").appendChild(gif);
-  }
-}
-changeGif().init();
+// function changeGif(){
+//   // Check if Mobile client
+//   var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/);
+//   var gif = new Image();
+//   if(isMobile){
+//     gif.src = "Assets/smokeGif.gif";
+//     gif.id = "smoke";
+//     document.getElementById("smokeHolder").remove();
+//     document.getElementById("smokeHolder").appendChild(gif);
+//   }
+// }
+// changeGif().init();
