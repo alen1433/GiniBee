@@ -312,9 +312,10 @@ h1 {
 
 h1 span {
   margin: 0 -4px;
+  will-change: transform, opacity, blur;
   opacity: 0;
   display: inline-block;
-  animation: animate 1s linear forwards;
+  animation: animate 0.9s linear forwards;
 }
 
 @keyframes animate {
