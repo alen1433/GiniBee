@@ -49,10 +49,11 @@ var animateHTML = function() {
 };
 animateHTML().init();
 
+window.onload = vid.play();
 
-setTimeout(function(){
-    vid.play();
-  }, 5000);
+// setTimeout(function(){
+//     vid.play();
+//   }, 5000);
 
 // function changeGif(){
 //   // Check if Mobile client
