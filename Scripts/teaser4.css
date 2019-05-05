@@ -319,15 +319,15 @@ h1 span {
 }
 
 @keyframes animate {
-  0% {opacity: 0; filter: blur(10px); transform: rotateY(90deg);
+  0% {opacity: 0; filter: blur(10px); /* transform: rotateY(90deg);
     -webkit-transform: rotateY(90deg);
     -moz-transform: rotateY(90deg);
-    -ms-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg); */
   }
-  100% {opacity: 1; filter: blur(0px); transform: rotateY(0deg);
+  100% {opacity: 1; filter: blur(0px); /* transform: rotateY(0deg);
     -webkit-transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg); */
   }
 }
 
