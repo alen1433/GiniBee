@@ -315,7 +315,7 @@ h1 span {
   will-change: transform, opacity, blur;
   opacity: 0;
   display: inline-block;
-  animation: animate 0.9s linear forwards;
+  animation: animate 0.5s linear forwards;
 }
 
 @keyframes animate {
