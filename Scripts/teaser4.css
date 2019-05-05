@@ -36,6 +36,9 @@ body {
   max-height: 100vh;
   margin-top: 3rem;
   opacity: 0;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
   transform: scale(1);
   animation: logoAnim 1.5s linear 2.5s forwards
 }
@@ -44,6 +47,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -6;
   margin-left: 0;
@@ -90,6 +96,9 @@ body {
 }
 
 #MLogo {
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
@@ -114,6 +123,9 @@ body {
   top: 50%;
   left: 50%;
   margin-left: 75px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -2;
   animation-name: ginStdAnim;
@@ -128,6 +140,9 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -75px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: -2;
   animation-name: ginPrmAnim;
@@ -143,7 +158,10 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 130px;
-  transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1) ;
+  -ms-transform: translate(-50%, -50%) scale(1) ;
+  -webkit-transform: translate(-50%, -50%) scale(1) ;
+  transform: translate(-50%, -50%) scale(1) ;
   z-index: -3;
   animation-name: brinTopAnim;
   animation-duration: 2s;
@@ -157,6 +175,9 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 270px;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1;
   animation-name: brinBotAnim;
@@ -170,7 +191,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 100px; 
+  margin-top: 100px;
+  -moz-transform: translate(-50%, -50%) scale(1) ;
+  -ms-transform: translate(-50%, -50%) scale(1) ;
+  -webkit-transform: translate(-50%, -50%) scale(1) ;
   transform: translate(-50%, -50%) scale(1) ;
   opacity: 1;
   z-index: -1;
@@ -181,9 +205,17 @@ body {
 }
 
 @keyframes tonicAnim {
-  0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8) ; }
+  0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8);
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+    -ms-transform: translate(-50%, -50%) scale(0.8);
+    -moz-transform: translate(-50%, -50%) scale(0.8);
+  }
   50% {opacity: 1;}
-  100% {transform: translate(-50%, -50%) scale(1) ;}
+  100% {transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 @keyframes ginPrmAnim {
@@ -262,7 +294,13 @@ h1 {
   position: absolute;
   top: 45%;
   left: 0;
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -webkit-transform: scale(1) translate(-50%, -50%);
   transform: scale(1) translate(-50%, -50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   color: rgb(158, 158, 158);
@@ -280,8 +318,16 @@ h1 span {
 }
 
 @keyframes animate {
-  0% {opacity: 0; transform: rotateY(90deg); filter: blur(10px);}
-  100% {opacity: 1; transform: rotateY(0deg); filter: blur(0px);}
+  0% {opacity: 0; filter: blur(10px); transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+  }
+  100% {opacity: 1; filter: blur(0px); transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+  }
 }
 
 h1 span:nth-child(1) {
@@ -390,6 +436,9 @@ h1 span:nth-child(18) {
 
   #anim {
     margin-top: 15rem;
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
 
@@ -417,6 +466,9 @@ h1 span:nth-child(18) {
 @media (min-width: 1200px) {
   #anim {
     margin-top: 10rem;
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
     transform: scale(0.85);
   }
 
@@ -427,6 +479,9 @@ h1 span:nth-child(18) {
 
   #ginLogo {
     margin: 8rem auto 0 auto;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
@@ -449,6 +504,9 @@ h1 span:nth-child(18) {
   }
 
   #MLogo {
+    -moz-transform: scale(1) translateY(20%);
+    -ms-transform: scale(1) translateY(20%);
+    -webkit-transform: scale(1) translateY(20%);
     transform: scale(1) translateY(20%);
   }
 
@@ -461,6 +519,9 @@ h1 span:nth-child(18) {
 @media (min-width: 1400px) {
   #anim {
     margin-top: 30rem;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
     transform: none;
   }
 
@@ -470,6 +531,9 @@ h1 span:nth-child(18) {
 
   #ginLogo {
     margin: 8rem auto 0 auto;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 
