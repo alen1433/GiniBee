@@ -219,8 +219,16 @@ body {
 
 /* traja 7s */
 
+#smokeHolder{
+  width: 100%;
+  overflow:hidden;
+  display:block;
+  height: 98%;
+}
+
 #smoke {
   position: absolute;
+  margin-top: -2%;
   top: 0;
   left: 0;
   width: 100%;
@@ -246,13 +254,13 @@ body {
 
 #smokeAnim {
   margin-bottom: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   /* margin-top: 15rem; */
 }
 
 h1 {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
   transform: scale(1) translate(-50%, -50%);
   transform: translateY(-50%);
@@ -277,49 +285,49 @@ h1 span {
 }
 
 h1 span:nth-child(1) {
-  animation-delay: 5.6s;
+  animation-delay: 4.6s;
 }
 h1 span:nth-child(2) {
-  animation-delay: 5.7s;
+  animation-delay: 4.7s;
 }
 h1 span:nth-child(3) {
-  animation-delay: 5.8s;
+  animation-delay: 4.8s;
 }
 h1 span:nth-child(4) {
-  animation-delay: 5.9s;
+  animation-delay: 4.9s;
 }
 h1 span:nth-child(5) {
-  animation-delay: 6.05s;
+  animation-delay: 5.05s;
 }
 h1 span:nth-child(6) {
-  animation-delay: 6.1s;
+  animation-delay: 5.1s;
 }
 h1 span:nth-child(8) {
-  animation-delay: 6.4s;
+  animation-delay: 5.4s;
 }
 h1 span:nth-child(9) {
-  animation-delay: 6.5s;
+  animation-delay: 5.5s;
 }
 h1 span:nth-child(11) {
-  animation-delay: 6.8s;
+  animation-delay: 5.8s;
 }
 h1 span:nth-child(13) {
-  animation-delay: 7s;
+  animation-delay: 6s;
 }
 h1 span:nth-child(14) {
-  animation-delay: 7.1s;
+  animation-delay: 6.1s;
 }
 h1 span:nth-child(15) {
-  animation-delay: 7.2s;
+  animation-delay: 6.2s;
 }
 h1 span:nth-child(16) {
-  animation-delay: 7.3s;
+  animation-delay: 6.3s;
 }
 h1 span:nth-child(17) {
-  animation-delay: 7.4s;
+  animation-delay: 6.4s;
 }
 h1 span:nth-child(18) {
-  animation-delay: 7.5s;
+  animation-delay: 6.5s;
 }
 
 @media (min-width: 410px) {
@@ -466,7 +474,7 @@ h1 span:nth-child(18) {
   }
 
   h1 {
-    top: 50%;
+    top: 45%;
   }
 
   #infoTonic {

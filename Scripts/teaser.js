@@ -50,9 +50,9 @@ var animateHTML = function() {
 animateHTML().init();
 
 
-// setTimeout(function(){
-//     vid.play();
-//   }, 4500);
+setTimeout(function(){
+    vid.play();
+  }, 4500);
 
 // function changeGif(){
 //   // Check if Mobile client
