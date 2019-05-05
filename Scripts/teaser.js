@@ -52,7 +52,7 @@ animateHTML().init();
 
 setTimeout(function(){
     vid.play();
-  }, 4500);
+  }, 5000);
 
 // function changeGif(){
 //   // Check if Mobile client
