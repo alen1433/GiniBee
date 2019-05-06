@@ -123,6 +123,7 @@ body {
   top: 50%;
   left: 50%;
   margin-left: 75px;
+  will-change: transform, opacity;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -140,6 +141,7 @@ body {
   top: 50%;
   left: 50%;
   margin-left: -75px;
+  will-change: transform, opacity;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -158,6 +160,7 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 130px;
+  will-change: transform, opacity;
   -moz-transform: translate(-50%, -50%) scale(1) ;
   -ms-transform: translate(-50%, -50%) scale(1) ;
   -webkit-transform: translate(-50%, -50%) scale(1) ;
@@ -175,6 +178,7 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 270px;
+  will-change: transform, opacity;
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -189,6 +193,7 @@ body {
 
 #tonic {
   position: absolute;
+  will-change: transform, opacity;
   top: 50%;
   left: 50%;
   margin-top: 100px;
@@ -312,7 +317,7 @@ h1 {
 
 h1 span {
   margin: 0 -4px;
-  will-change: transform, opacity, blur;
+  will-change: transform, opacity;
   opacity: 0;
   display: inline-block;
   animation: animate 1s linear forwards;
