@@ -40,7 +40,17 @@ body {
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
-  animation: logoAnim 1.5s linear 2.5s forwards
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
 }
 
 #beeLogo {
@@ -107,7 +117,17 @@ body {
 }
 
 .fade-in {
-  animation: logoAnim 1.5s linear 0.5s backwards
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
 }
 
 /* premaknjeno iz leve za 550 in zgoraj za 50*/
@@ -134,6 +154,12 @@ body {
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginStdAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
 #ginPrm {
@@ -152,6 +178,12 @@ body {
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginPrmAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
 
@@ -171,6 +203,12 @@ body {
   animation-delay: 1.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinTopAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
 #brinBot {
@@ -189,6 +227,12 @@ body {
   animation-delay: 1.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinBotAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
 #tonic {
@@ -207,20 +251,29 @@ body {
   animation-duration: 2.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: tonicAnim;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
 }
 
 @keyframes tonicAnim {
   0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8);
-    -webkit-transform: translate(-50%, -50%) scale(0.8);
     -ms-transform: translate(-50%, -50%) scale(0.8);
     -moz-transform: translate(-50%, -50%) scale(0.8);
   }
   50% {opacity: 1;}
   100% {transform: translate(-50%, -50%) scale(1);
-    -webkit-transform: translate(-50%, -50%) scale(1);
     -moz-transform: translate(-50%, -50%) scale(1);
     -ms-transform: translate(-50%, -50%) scale(1);
   }
+}
+  /* safari animation */
+@-webkit-keyframes tonicAnim {
+  0% {opacity: 0;-webkit-transform: translate(-50%, -50%) scale(0.8);}
+  50% {opacity: 1;}
+  100% {-webkit-transform: translate(-50%, -50%) scale(1);}
 }
 
 @keyframes ginPrmAnim {
@@ -272,7 +325,27 @@ body {
   height: 100%;
   z-index: -7;
   opacity: 0;
-  animation: startVid 0.5s linear 5s forwards, endVid 0.5s linear 9.5s forwards;
+  animation-name: startvid;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+  animation-name: endVid;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 9.5s;
+  animation-fill-mode: forwards;
+  /* safari animation */
+  -webkit-animation-name: startvid;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: endVid;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 9.5s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes endVid {
@@ -324,16 +397,20 @@ h1 span {
 }
 
 @keyframes animate {
-  0% {opacity: 0; transform: rotateY(90deg);
-    -webkit-transform: rotateY(90deg);
-    -moz-transform: rotateY(90deg);
-    -ms-transform: rotateY(90deg);
-  }
-  100% {opacity: 1; transform: rotateY(0deg);
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-  }
+  0% {opacity: 0; transform: rotateY(90deg);}
+  100% {opacity: 1; transform: rotateY(0deg);}
+}
+@-webkit-keyframes animate {
+  0% {opacity: 0; -webkit-transform: rotateY(90deg);}
+  100% {opacity: 1; -webkit-transform: rotateY(0deg);}
+}
+@-moz-keyframes animate {
+  0% {opacity: 0; -moz-transform: rotateY(90deg);}
+  100% {opacity: 1; -moz-transform: rotateY(0deg);}
+}
+@-ms-keyframes animate {
+  0% {opacity: 0; -ms-transform: rotateY(90deg);}
+  100% {opacity: 1; -ms-transform: rotateY(0deg);}
 }
 
 h1 span:nth-child(1) {
