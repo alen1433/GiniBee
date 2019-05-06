@@ -325,27 +325,17 @@ body {
   height: 100%;
   z-index: -7;
   opacity: 0;
-  animation-name: startvid;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-  animation-name: endVid;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-delay: 9.5s;
-  animation-fill-mode: forwards;
+  animation-name: startVid, endVid;
+  animation-duration: 0.5s, 0.5s;
+  animation-timing-function: linear, linear;
+  animation-delay: 5s, 9.5s;
+  animation-fill-mode: forwards, forwards;
   /* safari animation */
-  -webkit-animation-name: startvid;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 5s;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-name: endVid;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 9.5s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-name: startVid, endVid;
+  -webkit-animation-duration: 0.5s, 0.5s;
+  -webkit-animation-timing-function: linear, linear;
+  -webkit-animation-delay: 5s, 9.5s;
+  -webkit-animation-fill-mode: forwards, forwards;
 }
 
 @keyframes endVid {
