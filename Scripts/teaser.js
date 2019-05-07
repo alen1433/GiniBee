@@ -1,3 +1,11 @@
+document.body.classList.add('js-loading');
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+  document.body.classList.remove('js-loading');
+}
+
 var vid = document.getElementById("smoke");
 vid.playbackRate = 1.5;
 // var anim = document.getElementById("anim");
@@ -27,6 +35,7 @@ function animateBee(){
 //     anim.style.transform = "scale(" + (screen.width/800) + ")";
 //   }
 // }
+
 
 var animateHTML = function() {
   var elems;
