@@ -3,14 +3,22 @@ vid.playbackRate = 1.5;
 // var anim = document.getElementById("anim");
 
 // myFunction();
-// animateBee();
+animateBee();
 // document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
 
 function animateBee(){
-  if(screen.width > 1200){
-    var bee = new Image();
-    bee.src = "Assets/BeeLogo.png";
-    bee.style.animation = "logoAnim 1.5s linear 2.5s forwards";
+  if(screen.width < 992){
+    // var element = document.getElementById("bzzz");
+    // element.setAttribute("src","#");
+    // element.style.opacity = 0;
+    // var bee = new Image();
+    // var beeDiv = document.createElement("div");
+    // bee.src = "Assets/BeeLogo.png";
+    // bee.alt = "Bee logo";
+    // bee.setAttribute("class", "img-fluid");
+    // beeDiv.setAttribute("class", "col-12 col-lg-6 offset-lg-1");
+    // beeDiv.id = "beeLogo";
+    // bee.style.animation = "logoAnim 1.5s linear 2.5s forwards";
   }
 }
 
