@@ -7,6 +7,12 @@
 
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 html,body{
   height:100%;
   background-repeat: no-repeat;
@@ -174,11 +180,13 @@ body {
   animation-name: tonicAnim;
   animation-duration: 2.5s;
   animation-fill-mode: backwards;
+  /* animation-delay: 1s; */
   animation-timing-function: ease-out;
     /* safari animation */
   -webkit-animation-name: tonicAnim;
   -webkit-animation-duration: 2.5s;
   -webkit-animation-fill-mode: backwards;
+  /* -webkit-animation-delay: 1s; */
   -webkit-animation-timing-function: ease-out;
 }
 
