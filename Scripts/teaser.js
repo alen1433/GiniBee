@@ -1,12 +1,15 @@
 document.body.classList.add('js-loading');
+var vid = document.getElementById("smoke");
 
 window.addEventListener("load", showPage);
 
 function showPage() {
   document.body.classList.remove('js-loading');
+  setTimeout(function(){
+    vid.play();
+  }, 5000);
 }
 
-var vid = document.getElementById("smoke");
 vid.playbackRate = 1.5;
 // var anim = document.getElementById("anim");
 
@@ -67,9 +70,9 @@ var animateHTML = function() {
 };
 animateHTML().init();
 
-window.onload = setTimeout(function(){
-    vid.play();
-  }, 5000);
+// window.onload = setTimeout(function(){
+//     vid.play();
+//   }, 5000);
 
 // function changeGif(){
 //   // Check if Mobile client
