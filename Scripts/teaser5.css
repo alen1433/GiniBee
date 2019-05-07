@@ -53,10 +53,10 @@ body {
 
 #anim {
   position: relative;
-  transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -moz-transform: scale(0.5);
+  transform: scale(0.4);
+  -webkit-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -moz-transform: scale(0.4);
 }
 
 #smokeCol {
@@ -459,6 +459,15 @@ h1 span:nth-child(18) {
 /* ------------------------------------------------------------ */
 
 @media (min-width: 360px){
+
+  #anim {
+    position: relative;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+
   #info1, #info2, #info3 {
     height: 270px;
   }
