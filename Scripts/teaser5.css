@@ -1,0 +1,538 @@
+@font-face {
+  font-family: 'GiniFont';
+  src: url('../Assets/optiagency-gothic-webfont.woff2') format('woff2'),
+       url('../Assets/optiagency-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,body{
+  height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* max-width: 100%;
+  overflow-x: hidden; */
+}
+
+body {
+  /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
+  /* background: -webkit-linear-gradient(bottom, black 50%, #191919);
+  background: -moz-linear-gradient(bottom, black 50%,#191919);
+  background: -ms-linear-gradient(bottom, black 50%,#191919);
+  background: -o-linear-gradient(bottom, black 50%,#191919);
+  background: linear-gradient(bottom, black 50%,#191919); */
+  background-color: #262626;
+  background-attachment: fixed;
+}
+
+#logoCol {
+  opacity: 0;
+  /* animation */
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
+}
+
+#beeLogo {
+  opacity: 0;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+#anim {
+  position: relative;
+  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+}
+
+#smokeCol {
+  margin-top: -50px;
+}
+
+#smokeHolder {
+  width: 100%;
+  overflow:hidden;
+  display:block;
+  height: 98%;
+}
+
+#smoke{
+  margin-top: -3%;
+  z-index: -5;
+  opacity: 0;
+  /* animation */
+  animation-name: startVid, endVid;
+  animation-duration: 0.5s, 0.5s;
+  animation-timing-function: linear, linear;
+  animation-delay: 5s, 9.5s;
+  animation-fill-mode: forwards, forwards;
+  /* safari animation */
+  -webkit-animation-name: startVid, endVid;
+  -webkit-animation-duration: 0.5s, 0.5s;
+  -webkit-animation-timing-function: linear, linear;
+  -webkit-animation-delay: 5s, 9.5s;
+  -webkit-animation-fill-mode: forwards, forwards;
+}
+
+#animCol {
+  /* margin-top: -100px; */
+}
+
+#brinBot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  z-index: 0;
+  object-fit: cover;
+  max-width: 500px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  /* animation */
+  will-change: opacity;
+  animation-name: brinBotAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinBotAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#brinTop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -4;
+  margin-top: 40px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: 600px;
+  height: auto;
+  /* animation */
+  will-change: opacity;
+  animation-name: brinTopAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinTopAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#tonic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 40px;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: 400px;
+  height: 540px;
+  /* animation */
+  will-change: opacity;
+  animation-name: tonicAnim;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: tonicAnim;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#ginStd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: 70px;
+  z-index: -3;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: 400px;
+  height: 740px;
+  /* animation */
+  will-change: opacity;
+  animation-name: ginStdAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginStdAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#ginPrm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -70px;
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: 400px;
+  height: 740px;
+  /* animation */
+  will-change: opacity;
+  animation-name: ginPrmAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginPrmAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+.space {
+  width: 20px;
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  color: rgb(158, 158, 158);
+  font-size: 2rem;
+  font-family: GiniFont;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 span {
+  margin: 0 -4px;
+  will-change: transform, opacity;
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+
+#info {
+  margin-top: 100px;
+}
+
+#info1 {
+  max-width: 100%;
+  height: 200px;
+}
+
+#info2 {
+  max-width: 100%;
+  height: 200px;
+}
+
+#info3 {
+  max-width: 100%;
+  height: 200px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+}
+
+p {
+  color: white;
+  /* margin-top: -5rem; */
+  font-weight: lighter;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#footer {
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  width: 100%;
+  background-color: #191919;
+  color: white;
+  text-align: center;
+  font-family: 'GiniFont';
+  font-weight: lighter;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+}
+
+#MLogo {
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* -------------------------animation delays for SPIRIT IN A BOTTLE------------------------- */
+
+h1 span:nth-child(1) {
+  animation-delay: 5.3s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 5.45s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 5.6s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 5.75s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 5.9s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 6.1s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 6.3s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 6.45s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 6.6s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 6.85s;
+}
+h1 span:nth-child(14) {
+  animation-delay: 7.0s;
+}
+h1 span:nth-child(15) {
+  animation-delay: 7.1s;
+}
+h1 span:nth-child(16) {
+  animation-delay: 7.3s;
+}
+h1 span:nth-child(17) {
+  animation-delay: 7.4s;
+}
+h1 span:nth-child(18) {
+  animation-delay: 7.5s;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* -------------------------keyframes------------------------- */
+@keyframes tonicAnim {
+  0% {opacity: 0;
+    height: 440px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+  }
+  50% {opacity: 1;}
+  100% {height: 540px;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+}
+  /* safari animation */
+@-webkit-keyframes tonicAnim {
+  0% {opacity: 0;
+    height: 440px;
+    -webkit-transform: translate(-50%, -50%);
+  }
+  50% {opacity: 1;}
+  100% {height: 540px;
+    -webkit-transform:
+    translate(-50%, -50%);
+  }
+}
+
+@keyframes ginPrmAnim {
+  0% {opacity: 0; margin-left: -110px;}
+  50% {opacity: 1;}
+  100% {margin-left: -70px;}
+}
+
+@keyframes ginStdAnim {
+  0% {opacity: 0; margin-left: 110px;}
+  50% {opacity: 1;}
+  100% {margin-left: 70px;}
+}
+
+@keyframes brinBotAnim {
+  0% {opacity: 0; margin-top: 250px;}
+  50% {opacity: 1;}
+  100% {margin-top: 200px;}
+}
+
+@keyframes brinTopAnim {
+  0% {opacity: 0; margin-top: 90px;}
+  50% {opacity: 1;}
+  100% {margin-top: 40px;}
+}
+
+@keyframes animate {
+  0% {opacity: 0; transform: rotateY(90deg);}
+  100% {opacity: 1; transform: rotateY(0deg);}
+}
+@-webkit-keyframes animate {
+  0% {opacity: 0; -webkit-transform: rotateY(90deg);}
+  100% {opacity: 1; -webkit-transform: rotateY(0deg);}
+}
+@-moz-keyframes animate {
+  0% {opacity: 0; -moz-transform: rotateY(90deg);}
+  100% {opacity: 1; -moz-transform: rotateY(0deg);}
+}
+@-ms-keyframes animate {
+  0% {opacity: 0; -ms-transform: rotateY(90deg);}
+  100% {opacity: 1; -ms-transform: rotateY(0deg);}
+}
+
+@keyframes endVid {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes startVid {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes logoAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ------------------------------------------------------------ */
+
+@media (min-width: 360px){
+  #info1, #info2, #info3 {
+    height: 270px;
+  }
+}
+
+@media (min-width: 768px){
+
+  #anim {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+  }
+
+  #animCol {
+    margin-top: -100px;
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+  }
+
+  #info1, #info2, #info3 {
+    height: 370px;
+  }
+
+  h1 span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #anim {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+  }
+
+  #animCol {
+    margin-top: -100px;
+  }
+
+  #info1, #info2, #info3 {
+    height: 220px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #anim {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  #animCol {
+    margin-top: -50px;
+  }
+
+  #smokeCol {
+    margin-top: -280px;
+  }
+
+  h1 span {
+    font-size: 5rem;
+  }
+
+  #info {
+    margin-top: 230px;
+  }
+
+  #info1, #info2, #info3 {
+    height: 270px;
+  }
+}

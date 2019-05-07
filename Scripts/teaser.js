@@ -1,23 +1,24 @@
 var vid = document.getElementById("smoke");
 vid.playbackRate = 1.5;
-var anim = document.getElementById("anim");
+// var anim = document.getElementById("anim");
 
-myFunction();
-animateBee();
-document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
+// myFunction();
+// animateBee();
+// document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
 
 function animateBee(){
   if(screen.width > 1200){
-    var bee = document.getElementById("beeLogo");
+    var bee = new Image();
+    bee.src = "Assets/BeeLogo.png";
     bee.style.animation = "logoAnim 1.5s linear 2.5s forwards";
   }
 }
 
-function myFunction(){
-  if(screen.width < 576){
-    anim.style.transform = "scale(" + (screen.width/800) + ")";
-  }
-}
+// function myFunction(){
+//   if(screen.width < 576){
+//     anim.style.transform = "scale(" + (screen.width/800) + ")";
+//   }
+// }
 
 var animateHTML = function() {
   var elems;
